@@ -17,8 +17,9 @@ imports:
 - ./annotation
 
 classes:
-  Run:
-    description: A tomography run
+  Region:
+    description: Raw data (movie stacks) and derived data (tilt series, tomograms, annotations) from a single region of
+      a specimen.
     attributes:
       movie_stack_collections:
         description: The movie stack
@@ -37,15 +38,15 @@ classes:
         range: Tomogram
         multivalued: true
       annotations:
-        description: The annotations for this tomography run
+        description: The annotations for this region
         range: Annotation
         multivalued: true
 
-  Refinement:
-    description: A particle map refinement experiment.
+  Average:
+    description: A particle averaging experiment.
     attributes:
       name:
-        description: The name of the refinement
+        description: The name of the averaging experiment.
         range: string
       particle_maps:
         description: The particle maps
@@ -76,9 +77,9 @@ classes:
       name:
         description: The name of the dataset
         range: string
-      runs:
-        description: The runs in the dataset
-        range: Run
+      regions:
+        description: The regions in the dataset
+        range: Region
         multivalued: true
       refinements:
         description: The refinements in the dataset
