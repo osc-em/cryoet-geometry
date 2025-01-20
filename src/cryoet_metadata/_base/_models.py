@@ -518,7 +518,7 @@ class Run(ConfiguredBaseModel):
     """
     movie_stack_collections: Optional[List[MovieStackCollection]] = Field(default=None, description="""The movie stack""")
     tilt_series: Optional[List[TiltSeries]] = Field(default=None, description="""The tilt series""")
-    alignment: Optional[List[Alignment]] = Field(default=None, description="""The alignments""")
+    alignments: Optional[List[Alignment]] = Field(default=None, description="""The alignments""")
     tomograms: Optional[List[Tomogram]] = Field(default=None, description="""The tomograms""")
     annotations: Optional[List[Annotation]] = Field(default=None, description="""The annotations for this tomography run""")
 
@@ -532,15 +532,6 @@ class Refinement(ConfiguredBaseModel):
     annotations: Optional[List[Annotation]] = Field(default=None, description="""The annotations""")
 
 
-class Dataset(ConfiguredBaseModel):
-    """
-    A dataset
-    """
-    name: Optional[str] = Field(default=None, description="""The name of the dataset""")
-    runs: Optional[List[Run]] = Field(default=None, description="""The runs in the dataset""")
-    refinements: Optional[List[Refinement]] = Field(default=None, description="""The refinements in the dataset""")
-
-
 class MovieStackCollection(ConfiguredBaseModel):
     """
     A collection of movie stacks using the same gain and defect files.
@@ -548,6 +539,15 @@ class MovieStackCollection(ConfiguredBaseModel):
     movie_stacks: Optional[List[MovieStackSeries]] = Field(default=None, description="""The movie stacks in the collection""")
     GainFile: Optional[GainFile] = Field(default=None, description="""The gain file for the movie stacks""")
     DefectFile: Optional[DefectFile] = Field(default=None, description="""The defect file for the movie stacks""")
+
+
+class Dataset(ConfiguredBaseModel):
+    """
+    A dataset
+    """
+    name: Optional[str] = Field(default=None, description="""The name of the dataset""")
+    runs: Optional[List[Run]] = Field(default=None, description="""The runs in the dataset""")
+    refinements: Optional[List[Refinement]] = Field(default=None, description="""The refinements in the dataset""")
 
 
 # Model rebuild
@@ -595,6 +595,6 @@ PointMatrixSet3D.model_rebuild()
 TriMesh.model_rebuild()
 Run.model_rebuild()
 Refinement.model_rebuild()
-Dataset.model_rebuild()
 MovieStackCollection.model_rebuild()
+Dataset.model_rebuild()
 

@@ -28,7 +28,7 @@ classes:
         description: The tilt series
         range: TiltSeries
         multivalued: true
-      alignment:
+      alignments:
         description: The alignments
         range: Alignment
         multivalued: true
