@@ -1,12 +1,12 @@
 site_name: A specification for cryo-ET metadata
-site_url: https://sitename.bla
+site_url: https://cryo-et-standards.github.io/cryoet-geometry
 site_author: bla
 site_description: >-
   A specification for cryo-ET metadata
-repo_name: orgname/repo
-repo_url: https://github.com/orgname/repo
+repo_name: cryo-et-standards/cryoet-geometry
+repo_url: https://github.com/cryo-et-standards/cryoet-geometry
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2022 - 2024 orgname
+copyright: Copyright &copy; 2022 - 2024 cryo-et-standards WG
 
 
 # Custom navigation can be specified
