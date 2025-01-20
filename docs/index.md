@@ -1,13 +1,13 @@
 # cryoet-metadata
 
-A suggestion for a metadata schema for the transfer of cryo-ET geometry metadata between different software tools and 
+A suggestion for a metadata schema for the transfer of cryo-ET geometry metadata between different software tools and
 data repositories.
 
 ## Installation
 
 ```bash
-git clone 
-pip install .[all]
+git clone
+pip install ".[all]"
 ```
 
 ## Build python models from linkML schema
