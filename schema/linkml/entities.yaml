@@ -81,7 +81,7 @@ classes:
         description: The regions in the dataset
         range: Region
         multivalued: true
-      refinements:
-        description: The refinements in the dataset
-        range: Refinement
+      averages:
+        description: The averages in the dataset
+        range: Average
         multivalued: true
