@@ -1,4 +1,4 @@
-name: CETMDAnnotation
+name: annotation
 id: https://w3id.org/cetmd/annotation
 version: 0.0.1
 description: Schema for cryoET alignments
