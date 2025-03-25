@@ -9,9 +9,6 @@ prefixes:
   image_entities:
     prefix_prefix: image_entities
     prefix_reference: https://w3id.org/cetmd/image_entities/
-  entities:
-    prefix_prefix: entities
-    prefix_reference: https://w3id.org/cetmd/entities/
   annotation:
     prefix_prefix: annotation
     prefix_reference: https://w3id.org/cetmd/annotation/
@@ -39,7 +36,7 @@ prefixes:
   alignment:
     prefix_prefix: alignment
     prefix_reference: https://w3id.org/cetmd/alignment/
-default_prefix: entities
+default_prefix: https://w3id.org/cetmd/entities/
 types:
   string:
     name: string
@@ -4711,3 +4708,4 @@ classes:
         range: ProjectionAlignment
         multivalued: true
 source_file: schema/linkml/entities.yaml
+

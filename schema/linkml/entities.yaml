@@ -6,10 +6,11 @@ description: Schema for cryoET geometry
 prefixes:
   linkml: https://w3id.org/linkml/
   image_entities: https://w3id.org/cetmd/image_entities/
-  entities: https://w3id.org/cetmd/entities/
+#  entities: https://w3id.org/cetmd/entities/
   annotation: https://w3id.org/cetmd/annotation/
 
-default_prefix: entities
+
+#default_prefix: entities
 
 imports:
 - linkml:types
